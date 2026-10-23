@@ -1,23 +1,74 @@
 aid: lat-lon-gmbh
+
 name: lat/lon GmbH
-description: 'lat/lon GmbH is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://lat-lon.de/wp-content/uploads/2025/01/latlon_Logo.jpg
+
+description: 'lat/lon GmbH provides services in spatial and modern internet-based information systems based on open‑source software. The team combines expertise in geography, geoinformatics and computer science, offering consulting, development and support for geodata infrastructures. They contribute to open‑source projects such as xPlanBox and the OSGeo deegree framework, and are members of FOSSGIS, OGC and the Open Source Business Alliance.'
+
 url: https://raw.githubusercontent.com/api-evangelist/lat-lon-gmbh/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-23'
+
 modified: '2026-10-23'
+
 tags:
 - Company
-apis: []
+- GIS
+- Open-Source
+- Consulting
+- Geodata
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/lat-lon-gmbh-llms.txt
+- type: WellKnown
+  url: well-known/lat-lon-gmbh-well-known.yml
+- type: Hosts
+  url: hosts/lat-lon-gmbh-hosts.yml
+- type: Support
+  url: https://support.lat-lon.de/help
+- type: GitHubOrganization
+  url: https://github.com/lat-lon
+- type: DomainSecurity
+  url: security/lat-lon-gmbh-domain-security.yml
 - type: Website
-  url: http://www.lat-lon.de
+  url: https://lat-lon.de
+- type: Documentation
+  url: https://lat-lon.de/open-source/
+- type: About
+  url: https://lat-lon.de/unternehmen/about/
+- type: Contact
+  url: https://lat-lon.de/kontakt/
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Provider docs are rendered as HTML with no machine‑readable OpenAPI spec discovered.
+  evidence:
+    - url: https://lat-lon.de/open-source/
+      status: 200
+  checked: '2026-10-23'
+x-enrichment:
+  date: '2026-10-23'
+  status: enriched
+  artifacts_added: 13
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

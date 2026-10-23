@@ -1,0 +1,22 @@
+generated: '2026-10-23'
+method: derived
+source:
+  - url: https://lat-lon.de/datenschutz/
+    http_status: 200
+    fetched: "yes"
+    note: Privacy policy page
+signals:
+  data_subject_request:
+    evidence:
+      - source: https://lat-lon.de/datenschutz/
+        http_status: 200
+        fetched: "yes"
+        quote: "Die lat/lon gesellschaft für raumbezogene Informationssysteme mbH als Betreiber dieser Seiten nimmt den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend der gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung."
+        note: States commitment to protect personal data and handle it confidentially.
+  subprocessors:
+    evidence:
+      - source: https://lat-lon.de/datenschutz/
+        http_status: 200
+        fetched: "yes"
+        quote: "Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben, außer, dass die Weitergabe Ihrer personenbezogenen Daten gesetzlich geregelt ist oder die Weitergabe Ihrer personenbezogenen Daten auf Grund eines Auftragsverhältnisses zwischen Ihnen und uns erforderlich bzw. zur Erfüllung des Auftrages zweckdienlich ist."
+        note: Allows sharing only with consent, legal requirement, or contractual necessity.
